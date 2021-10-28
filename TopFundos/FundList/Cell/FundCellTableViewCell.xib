@@ -55,15 +55,52 @@ Typography
                         <color key="textColor" name="Black gray 2"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Órama DI Tesouro FIRF Simples LP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6b-oi-RBY">
+                        <rect key="frame" x="20" y="88" width="287" height="22"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                        <color key="textColor" red="0.31372549019607843" green="0.31764705882352939" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6,09%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuF-21-TJp">
+                        <rect key="frame" x="279" y="136" width="48" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Od9-fU-3Cc"/>
+                            <constraint firstAttribute="width" constant="48" id="boG-UU-9Bt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                        <color key="textColor" red="0.31372549019607843" green="0.31764705882352939" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 meses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iM6-5q-19A">
+                        <rect key="frame" x="260" y="160" width="59" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                        <color key="textColor" red="0.56470588235294117" green="0.56862745098039214" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aplicação mínima: R$ 1.000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D50-wC-ZVv">
+                        <rect key="frame" x="20" y="160" width="193" height="20"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                        <color key="textColor" red="0.56470588235294117" green="0.56862745098039214" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="n6b-oi-RBY" firstAttribute="leading" secondItem="uqz-9c-Dih" secondAttribute="trailing" constant="16" id="GXg-cl-3Kt"/>
+                    <constraint firstItem="n6b-oi-RBY" firstAttribute="top" secondItem="iKw-pI-VyM" secondAttribute="bottom" constant="24" id="HmT-ys-Sdv"/>
                     <constraint firstItem="uqz-9c-Dih" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Iz5-uE-1be"/>
+                    <constraint firstAttribute="trailing" secondItem="FuF-21-TJp" secondAttribute="trailing" constant="16" id="KMF-zR-he7"/>
+                    <constraint firstItem="FuF-21-TJp" firstAttribute="trailingMargin" secondItem="iM6-5q-19A" secondAttribute="trailing" id="Mq4-0g-BCn"/>
                     <constraint firstItem="uqz-9c-Dih" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="T2L-P5-Viy"/>
+                    <constraint firstItem="D50-wC-ZVv" firstAttribute="leading" secondItem="uqz-9c-Dih" secondAttribute="trailing" constant="16" id="WSN-Xf-ibe"/>
                     <constraint firstItem="1cB-Xm-FTR" firstAttribute="leading" secondItem="uqz-9c-Dih" secondAttribute="trailing" constant="10" id="Y0B-go-U9Y"/>
                     <constraint firstItem="iKw-pI-VyM" firstAttribute="top" secondItem="1cB-Xm-FTR" secondAttribute="bottom" constant="8" id="aM8-dZ-hhp"/>
+                    <constraint firstItem="D50-wC-ZVv" firstAttribute="top" secondItem="n6b-oi-RBY" secondAttribute="bottom" constant="50" id="cQ5-zk-KPp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="n6b-oi-RBY" secondAttribute="trailing" constant="16" id="eKJ-PZ-xbh"/>
                     <constraint firstItem="iKw-pI-VyM" firstAttribute="leading" secondItem="uqz-9c-Dih" secondAttribute="trailing" constant="16" id="fME-xQ-NOL"/>
                     <constraint firstItem="1cB-Xm-FTR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="hgz-O2-ryK"/>
                     <constraint firstAttribute="bottom" secondItem="uqz-9c-Dih" secondAttribute="bottom" constant="20" id="kcI-sd-Usw"/>
+                    <constraint firstItem="iM6-5q-19A" firstAttribute="top" secondItem="FuF-21-TJp" secondAttribute="bottom" constant="8" id="rbM-JS-MPo"/>
+                    <constraint firstItem="FuF-21-TJp" firstAttribute="top" secondItem="n6b-oi-RBY" secondAttribute="bottom" constant="26" id="wCd-Zj-a8D"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -72,13 +109,13 @@ Typography
     </objects>
     <resources>
         <namedColor name="Black gray 2">
-            <color red="0.56470588235294117" green="0.56862745098039214" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.56499999761581421" green="0.5690000057220459" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Black grey">
             <color red="0.45882352941176469" green="0.46274509803921571" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Gray">
-            <color red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.96899998188018799" green="0.97299998998641968" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
