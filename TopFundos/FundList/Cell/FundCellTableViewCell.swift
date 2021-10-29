@@ -9,15 +9,17 @@ import UIKit
 
 class FundCellTableViewCell: UITableViewCell {
 
+    var viewModel: FundCellViewModel?
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.setup()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func setup() {
+        self.nameLabel.text = viewModel?.model.simple_name
     }
     
 }

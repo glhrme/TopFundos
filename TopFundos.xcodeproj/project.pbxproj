@@ -19,6 +19,9 @@
 		11D10885272A2A0B0093619B /* FundListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D10883272A2A0B0093619B /* FundListViewController.xib */; };
 		11D1088A272A2DC50093619B /* FundCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D10888272A2DC50093619B /* FundCellTableViewCell.swift */; };
 		11D1088B272A2DC50093619B /* FundCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D10889272A2DC50093619B /* FundCellTableViewCell.xib */; };
+		11D510BE272B7D0200D41368 /* FundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D510BD272B7D0200D41368 /* FundModel.swift */; };
+		11D510C1272B7EA900D41368 /* FundListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D510C0272B7EA900D41368 /* FundListViewModel.swift */; };
+		11D510C3272B805A00D41368 /* FundCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D510C2272B805A00D41368 /* FundCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		11D10883272A2A0B0093619B /* FundListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FundListViewController.xib; sourceTree = "<group>"; };
 		11D10888272A2DC50093619B /* FundCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundCellTableViewCell.swift; sourceTree = "<group>"; };
 		11D10889272A2DC50093619B /* FundCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FundCellTableViewCell.xib; sourceTree = "<group>"; };
+		11D510BD272B7D0200D41368 /* FundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundModel.swift; sourceTree = "<group>"; };
+		11D510C0272B7EA900D41368 /* FundListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundListViewModel.swift; sourceTree = "<group>"; };
+		11D510C2272B805A00D41368 /* FundCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		11D1084A272A10860093619B /* TopFundos */ = {
 			isa = PBXGroup;
 			children = (
+				11D510BC272B7CF600D41368 /* Model */,
 				11D10881272A28C90093619B /* FundList */,
 				11D10880272A28A30093619B /* App */,
 				11D1087B272A233F0093619B /* Coordinator */,
@@ -156,6 +163,7 @@
 		11D10881272A28C90093619B /* FundList */ = {
 			isa = PBXGroup;
 			children = (
+				11D510BF272B7E9F00D41368 /* ViewModel */,
 				11D10887272A2D800093619B /* Cell */,
 				11D10886272A2A160093619B /* View */,
 			);
@@ -178,6 +186,23 @@
 				11D10889272A2DC50093619B /* FundCellTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		11D510BC272B7CF600D41368 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11D510BD272B7D0200D41368 /* FundModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11D510BF272B7E9F00D41368 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11D510C0272B7EA900D41368 /* FundListViewModel.swift */,
+				11D510C2272B805A00D41368 /* FundCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,8 +340,11 @@
 				11D1087F272A27E00093619B /* AppCoordinator.swift in Sources */,
 				11D1087D272A277B0093619B /* TopCoordinator.swift in Sources */,
 				11D1084C272A10860093619B /* AppDelegate.swift in Sources */,
+				11D510BE272B7D0200D41368 /* FundModel.swift in Sources */,
 				11D10884272A2A0B0093619B /* FundListViewController.swift in Sources */,
+				11D510C3272B805A00D41368 /* FundCellViewModel.swift in Sources */,
 				11D1084E272A10860093619B /* SceneDelegate.swift in Sources */,
+				11D510C1272B7EA900D41368 /* FundListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
