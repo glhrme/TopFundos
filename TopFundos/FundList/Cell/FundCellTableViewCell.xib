@@ -29,12 +29,14 @@
                                     <constraint firstAttribute="width" constant="4" id="cwH-4t-bsM"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1cB-Xm-FTR">
-                                <rect key="frame" x="33" y="53" width="173" height="22"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cB-Xm-FTR">
+                                <rect key="frame" x="14" y="20" width="173" height="22"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4A4-Wm-qHb">
-                                        <rect key="frame" x="6" y="4" width="150.5" height="18"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4A4-Wm-qHb">
+                                        <rect key="frame" x="6" y="2" width="161" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="161" id="DpC-ZZ-9PA"/>
+                                        </constraints>
                                         <string key="text">Estratégia: Renda Variável
 Typography
 </string>
@@ -47,24 +49,24 @@ Typography
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="ELM-pv-OSU"/>
                                     <constraint firstAttribute="width" constant="173" id="V8M-yw-DNi"/>
+                                    <constraint firstItem="4A4-Wm-qHb" firstAttribute="centerY" secondItem="1cB-Xm-FTR" secondAttribute="centerY" id="Vkv-KL-YYy"/>
+                                    <constraint firstItem="4A4-Wm-qHb" firstAttribute="centerX" secondItem="1cB-Xm-FTR" secondAttribute="centerX" id="maG-gh-1vQ"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crédito Privado High Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKw-pI-VyM">
-                                <rect key="frame" x="39" y="55" width="162" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crédito Privado High Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKw-pI-VyM">
+                                <rect key="frame" x="24" y="50" width="162" height="18"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
                                 <color key="textColor" name="Black gray 2"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Órama DI Tesouro FIRF Simples LP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6b-oi-RBY">
-                                <rect key="frame" x="-24" y="53" width="287" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Órama DI Tesouro FIRF Simples LP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6b-oi-RBY">
+                                <rect key="frame" x="20" y="92" width="307" height="22"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                 <color key="textColor" red="0.31372549019607843" green="0.31764705882352939" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="6,09%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuF-21-TJp">
-                                <rect key="frame" x="96" y="56" width="48" height="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6,09%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuF-21-TJp">
+                                <rect key="frame" x="279" y="129.5" width="48" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="Od9-fU-3Cc"/>
                                     <constraint firstAttribute="width" constant="48" id="boG-UU-9Bt"/>
@@ -73,30 +75,41 @@ Typography
                                 <color key="textColor" red="0.31372549019607843" green="0.31764705882352939" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12 meses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iM6-5q-19A">
-                                <rect key="frame" x="90" y="54" width="59" height="19.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 meses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iM6-5q-19A">
+                                <rect key="frame" x="276.5" y="153.5" width="50.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <color key="textColor" red="0.56470588235294117" green="0.56862745098039214" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aplicação mínima: R$ 1.000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D50-wC-ZVv">
-                                <rect key="frame" x="23" y="54" width="193" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aplicação mínima: R$ 1.000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D50-wC-ZVv">
+                                <rect key="frame" x="20" y="153.5" width="165.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <color key="textColor" red="0.56470588235294117" green="0.56862745098039214" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="n6b-oi-RBY" firstAttribute="top" secondItem="iKw-pI-VyM" secondAttribute="bottom" constant="24" id="2aY-N9-gMs"/>
+                            <constraint firstAttribute="trailing" secondItem="iM6-5q-19A" secondAttribute="trailing" constant="16" id="3Uq-TQ-zUl"/>
+                            <constraint firstAttribute="trailing" secondItem="FuF-21-TJp" secondAttribute="trailing" constant="16" id="IjE-GK-Z8M"/>
+                            <constraint firstAttribute="bottom" secondItem="iM6-5q-19A" secondAttribute="bottom" constant="32" id="NVk-ua-ij2"/>
+                            <constraint firstItem="iKw-pI-VyM" firstAttribute="leading" secondItem="1cB-Xm-FTR" secondAttribute="leading" constant="10" id="NbH-yg-V8t"/>
+                            <constraint firstItem="D50-wC-ZVv" firstAttribute="leading" secondItem="uqz-9c-Dih" secondAttribute="trailing" constant="16" id="SuH-Le-drV"/>
+                            <constraint firstItem="D50-wC-ZVv" firstAttribute="top" secondItem="iM6-5q-19A" secondAttribute="top" id="VV9-u2-ejA"/>
                             <constraint firstAttribute="bottom" secondItem="uqz-9c-Dih" secondAttribute="bottom" constant="20" id="WiT-uQ-mhy"/>
                             <constraint firstItem="uqz-9c-Dih" firstAttribute="top" secondItem="1jm-Nr-F5n" secondAttribute="top" constant="20" id="dGr-GL-Kor"/>
+                            <constraint firstItem="1cB-Xm-FTR" firstAttribute="leading" secondItem="uqz-9c-Dih" secondAttribute="trailing" constant="10" id="llI-2Z-b2H"/>
                             <constraint firstItem="uqz-9c-Dih" firstAttribute="leading" secondItem="1jm-Nr-F5n" secondAttribute="leading" id="nnU-Rf-GkD"/>
+                            <constraint firstItem="1cB-Xm-FTR" firstAttribute="top" secondItem="1jm-Nr-F5n" secondAttribute="top" constant="20" id="pwY-yu-TX4"/>
+                            <constraint firstItem="iM6-5q-19A" firstAttribute="top" secondItem="FuF-21-TJp" secondAttribute="bottom" constant="8" id="udy-nl-A7c"/>
+                            <constraint firstAttribute="trailing" secondItem="n6b-oi-RBY" secondAttribute="trailing" constant="16" id="vXh-CB-WkO"/>
+                            <constraint firstItem="n6b-oi-RBY" firstAttribute="leading" secondItem="uqz-9c-Dih" secondAttribute="trailing" constant="16" id="wlx-IF-QGm"/>
+                            <constraint firstItem="iKw-pI-VyM" firstAttribute="top" secondItem="1cB-Xm-FTR" secondAttribute="bottom" constant="8" id="xdT-3Z-6hY"/>
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" name="Black gray"/>
+                <color key="backgroundColor" name="Gray"/>
                 <constraints>
                     <constraint firstItem="1jm-Nr-F5n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VQV-ES-DCG"/>
                     <constraint firstItem="1jm-Nr-F5n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="chF-GT-tYs"/>
@@ -106,15 +119,14 @@ Typography
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="leftView" destination="uqz-9c-Dih" id="Kyc-Wb-Zo8"/>
                 <outlet property="nameLabel" destination="n6b-oi-RBY" id="k1C-nn-yNf"/>
+                <outlet property="strategyView" destination="1cB-Xm-FTR" id="UaS-7T-k1e"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="124.55357142857142"/>
         </tableViewCell>
     </objects>
     <resources>
-        <namedColor name="Black gray">
-            <color red="0.45899999141693115" green="0.46299999952316284" blue="0.47099998593330383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Black gray 2">
             <color red="0.56499999761581421" green="0.5690000057220459" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -15,6 +15,11 @@ class FundListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.viewModel?.fetchInitialData(handler: {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        })
         self.tableView.register(UINib(nibName: "FundCellTableViewCell", bundle: nil), forCellReuseIdentifier: self.identifierCell)
         
         self.tableView.delegate = self
@@ -24,12 +29,13 @@ class FundListViewController: UIViewController {
 
 extension FundListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.viewModel?.fundsList.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let viewModel = self.viewModel else { return UITableViewCell() }
         let cell = self.tableView.dequeueReusableCell(withIdentifier: self.identifierCell) as! FundCellTableViewCell
-        cell.viewModel = FundCellViewModel(model: .init(simple_name: "Teste"))
+        cell.viewModel = FundCellViewModel(model: viewModel.fundsList[indexPath.row])
         cell.setup()
         return cell
     }

@@ -12,6 +12,7 @@ class TopCoordinator {
     var navigation: UINavigationController?
     
     var listView: FundListViewController?
+    var listViewModel: FundListViewModel?
     
     func start() -> UINavigationController {
         let navigation = UINavigationController(rootViewController: getListView())
@@ -21,7 +22,10 @@ class TopCoordinator {
     
     func getListView() -> FundListViewController {
         let listView = FundListViewController()
+        let viewModel = FundListViewModel()
+        listView.viewModel = viewModel
         self.listView = listView
+        self.listViewModel = viewModel
         return listView
     }
 }
