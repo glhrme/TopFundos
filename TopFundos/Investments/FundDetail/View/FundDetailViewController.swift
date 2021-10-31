@@ -24,13 +24,17 @@ class FundDetailViewController: UIViewController {
     }
     
     func setup() {
-        let urlString = self.viewModel?.model.strategy_video?.thumbnail ?? "https://st4.depositphotos.com/14953852/22772/v/600/depositphotos_227724992-stock-illustration-image-available-icon-flat-vector.jpg"
-        let url = URL(fileURLWithPath: urlString)
+        let url = URL(fileURLWithPath: self.viewModel?.model.strategy_video?.thumbnail ?? "")
         self.fundNameLabel.text = self.viewModel?.model.full_name
         self.initialDateLabel.text = self.viewModel?.model.initial_date
         self.descriptionLabel.text = self.viewModel?.model.fund_manager.description
-        self.imageView.kf.setImage(with: url, placeholder: nil, options: nil) { result in
-            self.imageView.contentMode = .scaleAspectFit
+        self.imageView.kf.setImage(with: url, placeholder: nil, options: nil) { (result) in
+            switch result {
+            case .success:
+                self.imageView.contentMode = .scaleAspectFit
+            case .failure:
+                self.imageView.image = UIImage(named: "noimage")
+            }
         }
     }
 
