@@ -28,9 +28,40 @@
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvT-GL-VWy">
                     <rect key="frame" x="0.0" y="28" width="320" height="56"/>
-                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escala de risco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeR-Gt-umY">
+                            <rect key="frame" x="32" y="0.0" width="93" height="20"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                            <color key="textColor" red="0.43529411764705883" green="0.4392156862745098" blue="0.44313725490196076" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="menor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsy-9A-DMM">
+                            <rect key="frame" x="32" y="42" width="29" height="14"/>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="10"/>
+                            <color key="textColor" name="Black gray"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maior" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv3-cX-v9x">
+                            <rect key="frame" x="262" y="42" width="26" height="14"/>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="10"/>
+                            <color key="textColor" name="Black gray"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="yT0-OF-ABU">
+                            <rect key="frame" x="30" y="28" width="260" height="12"/>
+                        </imageView>
+                    </subviews>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="0v8-q1-XP2"/>
+                        <constraint firstAttribute="bottom" secondItem="cv3-cX-v9x" secondAttribute="bottom" id="7Se-BH-Lrh"/>
+                        <constraint firstAttribute="trailing" secondItem="yT0-OF-ABU" secondAttribute="trailing" constant="30" id="DwZ-uD-Wdh"/>
+                        <constraint firstItem="yT0-OF-ABU" firstAttribute="leading" secondItem="FvT-GL-VWy" secondAttribute="leading" constant="30" id="PbU-hE-xV3"/>
+                        <constraint firstItem="xsy-9A-DMM" firstAttribute="leading" secondItem="FvT-GL-VWy" secondAttribute="leading" constant="32" id="Pdj-Rf-PGZ"/>
+                        <constraint firstAttribute="bottom" secondItem="xsy-9A-DMM" secondAttribute="bottom" id="X5W-eR-oaP"/>
+                        <constraint firstItem="yT0-OF-ABU" firstAttribute="top" secondItem="SeR-Gt-umY" secondAttribute="bottom" constant="8" id="cys-WJ-sNv"/>
+                        <constraint firstItem="SeR-Gt-umY" firstAttribute="leading" secondItem="FvT-GL-VWy" secondAttribute="leading" constant="32" id="h5i-Rl-1vG"/>
+                        <constraint firstAttribute="trailing" secondItem="cv3-cX-v9x" secondAttribute="trailing" constant="32" id="pY3-tb-jsy"/>
+                        <constraint firstItem="SeR-Gt-umY" firstAttribute="top" secondItem="FvT-GL-VWy" secondAttribute="top" id="sRO-rV-Eiq"/>
                     </constraints>
                 </view>
             </subviews>
@@ -49,14 +80,15 @@
         </view>
     </objects>
     <resources>
+        <image name="gradient" width="319" height="12"/>
+        <namedColor name="Black gray">
+            <color red="0.45899999141693115" green="0.46299999952316284" blue="0.47099998593330383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Gray">
             <color red="0.96899998188018799" green="0.97299998998641968" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

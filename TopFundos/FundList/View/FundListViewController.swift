@@ -12,6 +12,7 @@ class FundListViewController: UIViewController {
     let identifierCell = "FundCellTableViewCell"
     
     @IBOutlet weak var tableView: UITableView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ class FundListViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
     }
+
 }
 
 extension FundListViewController: UITableViewDataSource, UITableViewDelegate {

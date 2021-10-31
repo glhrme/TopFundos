@@ -120,6 +120,7 @@ Typography
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="leftView" destination="uqz-9c-Dih" id="Kyc-Wb-Zo8"/>
+                <outlet property="minimumLabel" destination="D50-wC-ZVv" id="PaT-k3-7eE"/>
                 <outlet property="nameLabel" destination="n6b-oi-RBY" id="k1C-nn-yNf"/>
                 <outlet property="strategyView" destination="1cB-Xm-FTR" id="UaS-7T-k1e"/>
             </connections>

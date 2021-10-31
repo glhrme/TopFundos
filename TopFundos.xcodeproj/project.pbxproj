@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		11D510C1272B7EA900D41368 /* FundListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D510C0272B7EA900D41368 /* FundListViewModel.swift */; };
 		11D510C3272B805A00D41368 /* FundCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D510C2272B805A00D41368 /* FundCellViewModel.swift */; };
 		11D510C6272CDB2B00D41368 /* FundListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D510C5272CDB2B00D41368 /* FundListService.swift */; };
+		11D510C8272E0AF400D41368 /* String+ExtensionCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D510C7272E0AF400D41368 /* String+ExtensionCurrency.swift */; };
 		4630A87C714677F08F1DD428 /* Pods_TopFundos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD0B079139F20B4D9C190E6 /* Pods_TopFundos.framework */; };
 		7962B1298D07AC7373499E35 /* Pods_TopFundos_TopFundosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B429AF75E4D6F622FFE08A6E /* Pods_TopFundos_TopFundosUITests.framework */; };
 		C963CBBF50283C076A394CF2 /* Pods_TopFundosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E481579AC49660C98857BC /* Pods_TopFundosTests.framework */; };
@@ -69,6 +70,7 @@
 		11D510C0272B7EA900D41368 /* FundListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundListViewModel.swift; sourceTree = "<group>"; };
 		11D510C2272B805A00D41368 /* FundCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundCellViewModel.swift; sourceTree = "<group>"; };
 		11D510C5272CDB2B00D41368 /* FundListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundListService.swift; sourceTree = "<group>"; };
+		11D510C7272E0AF400D41368 /* String+ExtensionCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionCurrency.swift"; sourceTree = "<group>"; };
 		7E3027F24417C8A4E1B8D161 /* Pods-TopFundos-TopFundosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopFundos-TopFundosUITests.release.xcconfig"; path = "Target Support Files/Pods-TopFundos-TopFundosUITests/Pods-TopFundos-TopFundosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9AD0B079139F20B4D9C190E6 /* Pods_TopFundos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopFundos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB0D6CB84ED0084E24558BB /* Pods-TopFundos-TopFundosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopFundos-TopFundosUITests.debug.xcconfig"; path = "Target Support Files/Pods-TopFundos-TopFundosUITests/Pods-TopFundos-TopFundosUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				11D10854272A10880093619B /* Assets.xcassets */,
 				11D10856272A10880093619B /* LaunchScreen.storyboard */,
 				11D10859272A10880093619B /* Info.plist */,
+				11D510C9272E0AF800D41368 /* Extensions */,
 			);
 			path = TopFundos;
 			sourceTree = "<group>";
@@ -233,6 +236,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		11D510C9272E0AF800D41368 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11D510C7272E0AF400D41368 /* String+ExtensionCurrency.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		6109A23078FBC5A3D02F5605 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,7 +254,6 @@
 				B43DE79BE68ADB218B67BA27 /* Pods-TopFundosTests.debug.xcconfig */,
 				CA5549B84C39DD6699DEE948 /* Pods-TopFundosTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -504,6 +514,7 @@
 				11D510BE272B7D0200D41368 /* FundModel.swift in Sources */,
 				11D10884272A2A0B0093619B /* FundListViewController.swift in Sources */,
 				11D510C3272B805A00D41368 /* FundCellViewModel.swift in Sources */,
+				11D510C8272E0AF400D41368 /* String+ExtensionCurrency.swift in Sources */,
 				11D1084E272A10860093619B /* SceneDelegate.swift in Sources */,
 				11D510C1272B7EA900D41368 /* FundListViewModel.swift in Sources */,
 			);
