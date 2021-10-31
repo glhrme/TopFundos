@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -119,9 +119,12 @@ Typography
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="classLabel" destination="iKw-pI-VyM" id="nnJ-Pm-SSS"/>
                 <outlet property="leftView" destination="uqz-9c-Dih" id="Kyc-Wb-Zo8"/>
                 <outlet property="minimumLabel" destination="D50-wC-ZVv" id="PaT-k3-7eE"/>
                 <outlet property="nameLabel" destination="n6b-oi-RBY" id="k1C-nn-yNf"/>
+                <outlet property="percentageLabel" destination="FuF-21-TJp" id="fL2-au-3nM"/>
+                <outlet property="strategyLabel" destination="4A4-Wm-qHb" id="hka-NQ-ANI"/>
                 <outlet property="strategyView" destination="1cB-Xm-FTR" id="UaS-7T-k1e"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="124.55357142857142"/>

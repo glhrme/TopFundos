@@ -25,6 +25,7 @@ class FundListViewController: UIViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.navigationController?.navigationBar.isHidden = true
     }
 
 }
