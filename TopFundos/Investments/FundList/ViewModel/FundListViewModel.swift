@@ -7,8 +7,13 @@
 
 import Foundation
 
+protocol FundListViewModelDelegate {
+    func fundDetail(model: FundModel)
+}
+
 class FundListViewModel {
     let service = FundListService()
+    var delegate: FundListViewModelDelegate?
     
     var fundsList: [FundModel] = []
     func fetchInitialData(handler: @escaping () -> Void) {
@@ -21,5 +26,9 @@ class FundListViewModel {
                 print(error.localizedDescription)
             }
         }
+    }
+    
+    func goToDetails(indexPath: IndexPath) {
+        self.delegate?.fundDetail(model: self.fundsList[indexPath.row])
     }
 }

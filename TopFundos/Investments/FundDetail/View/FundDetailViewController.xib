@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FundDetailViewController" customModule="TopFundos" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="5da-5h-hIX" id="5oh-7e-XIh"/>
+                <outlet property="fundNameLabel" destination="ckw-79-hEc" id="Lgd-wv-AwT"/>
+                <outlet property="imageView" destination="PAj-Vz-lg6" id="Hq6-Pm-7OI"/>
+                <outlet property="initialDateLabel" destination="fAL-l6-4fj" id="IeQ-Ey-FiK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quasar Asset Management LTDA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckw-79-hEc">
+                    <rect key="frame" x="16" y="16" width="310" height="28"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/12/2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAL-l6-4fj">
+                    <rect key="frame" x="98.5" y="48" width="63" height="17"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de Início:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qq6-V4-gRS">
+                    <rect key="frame" x="16" y="48" width="78.5" height="17"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PAj-Vz-lg6">
+                    <rect key="frame" x="67.5" y="89" width="240" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="J5P-Li-9DJ"/>
+                        <constraint firstAttribute="width" constant="240" id="PpP-zJ-3tf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5da-5h-hIX">
+                    <rect key="frame" x="16" y="293" width="343" height="229.5"/>
+                    <mutableString key="text">A Quasar é uma gestora de recursos independente especialista em Crédito Privado.  A Quasar dispõe de um portfólio de fundos estruturados e adequados aos diferentes tipos de apetite de risco dos investidores. Oferecemos produtos que proporcionam adequada relação risco-retorno, com ênfase na preservação do capital. Ao aportar recursos nos fundos da Quasar, o investidor será assessorado por especialistas no assunto, obtendo retornos diferenciados e, ao mesmo tempo, diversificando seu portfólio em uma categoria de fundos não correlacionada com a oferta atualmente disponível no mercado.</mutableString>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="PAj-Vz-lg6" firstAttribute="top" secondItem="fAL-l6-4fj" secondAttribute="bottom" constant="24" id="1lz-d0-2yX"/>
+                <constraint firstItem="fAL-l6-4fj" firstAttribute="leading" secondItem="Qq6-V4-gRS" secondAttribute="trailing" constant="4" id="8Gu-mu-vVa"/>
+                <constraint firstItem="ckw-79-hEc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="91u-Du-wdu"/>
+                <constraint firstItem="ckw-79-hEc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="9QA-X6-fWW"/>
+                <constraint firstItem="5da-5h-hIX" firstAttribute="top" secondItem="PAj-Vz-lg6" secondAttribute="bottom" constant="24" id="Iua-GA-kcO"/>
+                <constraint firstItem="5da-5h-hIX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Jwq-KU-BNg"/>
+                <constraint firstAttribute="trailing" secondItem="5da-5h-hIX" secondAttribute="trailing" constant="16" id="Xe7-TS-4S0"/>
+                <constraint firstItem="PAj-Vz-lg6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Z71-2e-Fkt"/>
+                <constraint firstItem="Qq6-V4-gRS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="aBt-Nd-gR7"/>
+                <constraint firstItem="fAL-l6-4fj" firstAttribute="top" secondItem="ckw-79-hEc" secondAttribute="bottom" constant="4" id="hrX-BV-RJZ"/>
+                <constraint firstItem="Qq6-V4-gRS" firstAttribute="top" secondItem="ckw-79-hEc" secondAttribute="bottom" constant="4" id="kTo-17-EIm"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="84"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

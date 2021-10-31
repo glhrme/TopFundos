@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11787498272F134C00A2BD31 /* FundDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11787496272F134C00A2BD31 /* FundDetailViewController.swift */; };
+		11787499272F134C00A2BD31 /* FundDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11787497272F134C00A2BD31 /* FundDetailViewController.xib */; };
+		1178749B272F19C600A2BD31 /* FundDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1178749A272F19C600A2BD31 /* FundDetailViewModel.swift */; };
 		11D1084C272A10860093619B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1084B272A10860093619B /* AppDelegate.swift */; };
 		11D1084E272A10860093619B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1084D272A10860093619B /* SceneDelegate.swift */; };
 		11D10855272A10880093619B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D10854272A10880093619B /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 
 /* Begin PBXFileReference section */
 		0E52E8D1CC95426191272175 /* Pods-TopFundos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopFundos.debug.xcconfig"; path = "Target Support Files/Pods-TopFundos/Pods-TopFundos.debug.xcconfig"; sourceTree = "<group>"; };
+		11787496272F134C00A2BD31 /* FundDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundDetailViewController.swift; sourceTree = "<group>"; };
+		11787497272F134C00A2BD31 /* FundDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FundDetailViewController.xib; sourceTree = "<group>"; };
+		1178749A272F19C600A2BD31 /* FundDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundDetailViewModel.swift; sourceTree = "<group>"; };
 		11D10848272A10860093619B /* TopFundos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopFundos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D1084B272A10860093619B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11D1084D272A10860093619B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11787493272F130F00A2BD31 /* FundDetail */ = {
+			isa = PBXGroup;
+			children = (
+				11787495272F133500A2BD31 /* View */,
+				1178749C272F19CB00A2BD31 /* ViewModel */,
+			);
+			path = FundDetail;
+			sourceTree = "<group>";
+		};
+		11787494272F132000A2BD31 /* Investments */ = {
+			isa = PBXGroup;
+			children = (
+				11787493272F130F00A2BD31 /* FundDetail */,
+				11D510BC272B7CF600D41368 /* Model */,
+				11D10881272A28C90093619B /* FundList */,
+			);
+			path = Investments;
+			sourceTree = "<group>";
+		};
+		11787495272F133500A2BD31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11787496272F134C00A2BD31 /* FundDetailViewController.swift */,
+				11787497272F134C00A2BD31 /* FundDetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1178749C272F19CB00A2BD31 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1178749A272F19C600A2BD31 /* FundDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		11D1083F272A10860093619B = {
 			isa = PBXGroup;
 			children = (
@@ -134,8 +176,7 @@
 		11D1084A272A10860093619B /* TopFundos */ = {
 			isa = PBXGroup;
 			children = (
-				11D510BC272B7CF600D41368 /* Model */,
-				11D10881272A28C90093619B /* FundList */,
+				11787494272F132000A2BD31 /* Investments */,
 				11D10880272A28A30093619B /* App */,
 				11D1087B272A233F0093619B /* Coordinator */,
 				11D10854272A10880093619B /* Assets.xcassets */,
@@ -378,6 +419,7 @@
 				11D10858272A10880093619B /* LaunchScreen.storyboard in Resources */,
 				11D10885272A2A0B0093619B /* FundListViewController.xib in Resources */,
 				11D1088B272A2DC50093619B /* FundCellTableViewCell.xib in Resources */,
+				11787499272F134C00A2BD31 /* FundDetailViewController.xib in Resources */,
 				11D10855272A10880093619B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,10 +548,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1178749B272F19C600A2BD31 /* FundDetailViewModel.swift in Sources */,
 				11D510C6272CDB2B00D41368 /* FundListService.swift in Sources */,
 				11D1088A272A2DC50093619B /* FundCellTableViewCell.swift in Sources */,
 				11D1087F272A27E00093619B /* AppCoordinator.swift in Sources */,
 				11D1087D272A277B0093619B /* TopCoordinator.swift in Sources */,
+				11787498272F134C00A2BD31 /* FundDetailViewController.swift in Sources */,
 				11D1084C272A10860093619B /* AppDelegate.swift in Sources */,
 				11D510BE272B7D0200D41368 /* FundModel.swift in Sources */,
 				11D10884272A2A0B0093619B /* FundListViewController.swift in Sources */,

@@ -7,6 +7,7 @@ target 'TopFundos' do
 
   # Pods for TopFundos
   pod 'Alamofire', '~> 5.4'
+  pod 'Kingfisher'
 
   target 'TopFundosTests' do
     inherit! :search_paths

@@ -12,6 +12,10 @@ struct FundModel: Codable {
     let operability: Operability
     let specification: Specification
     let profitabilities: Profitabilities?
+    let full_name: String
+    let initial_date: String
+    let strategy_video: Video?
+    let fund_manager: FundManager
     
     struct Operability: Codable {
         let minimum_balance_permanence: String
@@ -30,5 +34,13 @@ struct FundModel: Codable {
     
     struct Profitabilities: Codable {
         let year: String?
+    }
+    
+    struct Video: Codable {
+        let thumbnail: String?
+    }
+    
+    struct FundManager: Codable {
+        let description: String
     }
 }
